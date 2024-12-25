@@ -11,7 +11,7 @@
 <h1>CRUD Operations</h1>
 
 <div class="container">
-    <form id="create-user-form">
+    <form id="user-form">
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" placeholder="Enter name" required>
@@ -24,11 +24,14 @@
             <label for="password">Password</label>
             <input type="password" id="password" placeholder="Enter password" required>
         </div>
-        <button type="submit">Create User</button>
+        <button type="submit">Save User</button>
+        <input type="hidden" id="user-id">
     </form>
 
+    <div class="message" id="message"></div>
+
     <div>
-        <input type="text" id="user-id" placeholder="Enter User ID to search">
+        <input type="text" id="search-email" placeholder="Enter email to search">
         <button id="search-user-btn">Search User</button>
     </div>
 

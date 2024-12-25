@@ -15,7 +15,7 @@ app.use(express.static('public'));
 app.use(bodyParser.json())
 
 
-// CREATE: Create a new user
+//  Create a new user
 app.post('/users', async (req, res) => {
     try {
         const { name, email, password } = req.body;
@@ -86,7 +86,6 @@ app.delete('/users/:id', async (req, res) => {
     }
 });
 
-// Start the server
 const PORT = 8000;
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
